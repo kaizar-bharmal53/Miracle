@@ -15,7 +15,7 @@ Miracle/
 ├── _redirects                  # Netlify redirect rule (/about -> /about.html)
 ├── robots.txt                  # Robots exclusion standard file
 ├── server.py                   # Lightweight local development server
-├── public/
+├── certificates/
 │   └── Building Safety Certificate.pdf # Official safety certificate document
 ├── css/
 │   ├── bootstrap.css           # Bootstrap 4 styling

@@ -1,6 +1,13 @@
 {
+  "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/public/(.*)",
+      "destination": "/certificates/$1"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -20,7 +27,7 @@
       ]
     },
     {
-      "source": "/public/(.*)",
+      "source": "/certificates/(.*)",
       "headers": [
         {
           "key": "Cache-Control",

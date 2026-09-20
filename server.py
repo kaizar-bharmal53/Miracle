@@ -11,6 +11,10 @@ class CleanURLHandler(http.server.SimpleHTTPRequestHandler):
         super().__init__(*args, directory=DIRECTORY, **kwargs)
 
     def do_GET(self):
+        # Support /public/ rewrite to /certificates/
+        if self.path.startswith('/public/'):
+            self.path = self.path.replace('/public/', '/certificates/', 1)
+
         # Handle clean URLs like /about -> /about.html or /about/index.html
         path = self.path.split('?')[0].split('#')[0]
         full_path = os.path.join(DIRECTORY, path.lstrip('/'))
