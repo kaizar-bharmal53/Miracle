@@ -130,10 +130,14 @@ a:focus {
 }
 
 .navbar-brand img {
-  height: 36px;
-  width: auto;
-  margin-right: 10px;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
   vertical-align: middle;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+  padding: 1px;
 }
 
 .custom_nav-container .nav_search-btn {
