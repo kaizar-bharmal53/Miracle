@@ -533,3 +533,32 @@ a:focus {
 }
 
 /* end footer section*/
+
+/* Social Media Links */
+.navbar-nav .social-nav-link {
+  font-size: 20px;
+  padding: 8px 12px !important;
+  color: #f7f6f7;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-nav .social-nav-link:hover {
+  color: #fdd31d !important;
+  transform: translateY(-2px);
+}
+
+.social_footer_links a {
+  color: #ffffff;
+  font-size: 24px;
+  margin-right: 18px;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.social_footer_links a:hover {
+  color: #fdd31d !important;
+  transform: translateY(-2px);
+}
