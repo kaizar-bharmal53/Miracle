@@ -14,23 +14,263 @@
 
   <title>Miracle Global School</title>
 
-  <link rel="shortcut icon" href="../images/favicon.ico" />
+  <base href="/" />
+
+  <link rel="shortcut icon" href="/images/favicon.ico" />
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
   <!-- progress barstle -->
-  <link rel="stylesheet" href="../css/css-circular-prog-bar.css">
+  <link rel="stylesheet" href="/css/css-circular-prog-bar.css">
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
   <!-- font wesome stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <!-- Custom styles for this template -->
-  <link href="../css/style.css" rel="stylesheet" />
+  <link href="/css/style.css?v=3.1" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="../css/responsive.css" rel="stylesheet" />
+  <link href="/css/responsive.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="../css/css-circular-prog-bar.css">
+  <style>
+    /* Executive Dropdown Menu Styling */
+    .custom_nav-container .nav-item.dropdown {
+      position: relative;
+    }
 
+    .custom_nav-container .nav-item.dropdown .dropdown-toggle {
+      cursor: pointer;
+      display: inline-flex !important;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
 
+    .custom_nav-container .nav-item.dropdown .dropdown-toggle::after {
+      display: none !important;
+    }
+
+    .custom_nav-container .nav-item.dropdown .dropdown-arrow {
+      font-size: 12px;
+      margin-left: 6px;
+      transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+      display: inline-block;
+    }
+
+    .custom_nav-container .nav-item.dropdown.show .dropdown-arrow,
+    .custom_nav-container .nav-item.dropdown:hover .dropdown-arrow {
+      transform: rotate(180deg);
+    }
+
+    @media (min-width: 992px) {
+      .custom_nav-container .dropdown-menu.school-dropdown-menu {
+        background: #ffffff !important;
+        border: 1px solid rgba(8, 36, 101, 0.08) !important;
+        border-radius: 16px !important;
+        box-shadow: 0 10px 25px -5px rgba(8, 36, 101, 0.12), 0 25px 50px -12px rgba(8, 36, 101, 0.18), 0 0 0 1px rgba(0, 0, 0, 0.03) !important;
+        padding: 10px !important;
+        min-width: 350px !important;
+        max-width: 380px !important;
+        margin-top: 12px !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        z-index: 1050 !important;
+        overflow: visible !important;
+      }
+
+      .custom_nav-container .dropdown-menu.school-dropdown-menu::after {
+        content: "";
+        position: absolute;
+        top: -14px;
+        left: 0;
+        right: 0;
+        height: 14px;
+        background: transparent;
+      }
+
+      .custom_nav-container .dropdown-menu.school-dropdown-menu::before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        left: 50%;
+        margin-left: -6px;
+        width: 12px;
+        height: 12px;
+        background: #ffffff;
+        transform: rotate(45deg);
+        border-top: 1px solid rgba(8, 36, 101, 0.1);
+        border-left: 1px solid rgba(8, 36, 101, 0.1);
+        z-index: 2;
+        box-shadow: -2px -2px 4px rgba(8, 36, 101, 0.03);
+      }
+
+      .custom_nav-container .nav-item.dropdown:hover>.dropdown-menu.school-dropdown-menu {
+        display: block !important;
+        animation: navDropdownFade 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+    }
+
+    @keyframes navDropdownFade {
+      from {
+        opacity: 0;
+        transform: translate(-50%, 8px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+    }
+
+    @media (max-width: 991px) {
+      .custom_nav-container .navbar-collapse {
+        background: #ffffff !important;
+        border-radius: 16px !important;
+        padding: 14px 14px !important;
+        margin-top: 14px !important;
+        box-shadow: 0 14px 35px rgba(8, 36, 101, 0.16), 0 2px 10px rgba(0, 0, 0, 0.08) !important;
+        border: 1px solid rgba(8, 36, 101, 0.08) !important;
+        width: 100% !important;
+      }
+
+      .custom_nav-container .navbar-collapse>.d-flex {
+        width: 100% !important;
+        align-items: stretch !important;
+      }
+
+      .custom_nav-container .navbar-nav {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+
+      .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item {
+        width: 100% !important;
+        margin-bottom: 4px !important;
+        position: static !important;
+      }
+
+      .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item:last-child {
+        margin-bottom: 0 !important;
+      }
+
+      .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
+        color: #082465 !important;
+        font-size: 15px !important;
+        font-weight: 600 !important;
+        padding: 11px 16px !important;
+        border-radius: 10px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        text-align: left !important;
+        width: 100% !important;
+        transition: all 0.2s ease !important;
+      }
+
+      .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link:hover,
+      .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link:focus {
+        background: #f1f6fe !important;
+        color: #082465 !important;
+      }
+
+      .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item.active>.nav-link {
+        background: #eaf1fd !important;
+        color: #082465 !important;
+        font-weight: 700 !important;
+      }
+
+      .custom_nav-container .nav-item.dropdown .dropdown-toggle {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+      }
+
+      .custom_nav-container .nav-item.dropdown .dropdown-arrow {
+        margin-left: auto !important;
+        font-size: 13px !important;
+        color: #082465 !important;
+        transition: transform 0.25s ease !important;
+      }
+
+      .custom_nav-container .nav-item.dropdown.show .dropdown-arrow {
+        transform: rotate(180deg) !important;
+      }
+
+      .custom_nav-container .dropdown-menu.school-dropdown-menu {
+        position: static !important;
+        transform: none !important;
+        float: none !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin: 8px 0 !important;
+        padding: 8px !important;
+        background: #f8fafc !important;
+        border-radius: 12px !important;
+        border: 1px solid #e2e8f0 !important;
+        box-shadow: none !important;
+        overflow: visible !important;
+      }
+
+      .custom_nav-container .dropdown-menu.school-dropdown-menu::before,
+      .custom_nav-container .dropdown-menu.school-dropdown-menu::after {
+        display: none !important;
+      }
+
+      .custom_nav-container .dropdown-card-item {
+        padding: 10px 10px !important;
+        border-radius: 10px !important;
+        background: #ffffff !important;
+        border: 1px solid #e2e8f0 !important;
+        margin-bottom: 6px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+      }
+
+      .custom_nav-container .dropdown-card-item:hover,
+      .custom_nav-container .dropdown-card-item:focus {
+        background: #f1f6fe !important;
+        border-color: #cbd5e1 !important;
+        transform: none !important;
+      }
+
+      .custom_nav-container .dropdown-card-item.active {
+        background: #f1f6fe !important;
+        border-color: #082465 !important;
+        border-left: 3px solid #082465 !important;
+      }
+
+      .dropdown-item-icon {
+        width: 38px !important;
+        height: 38px !important;
+        font-size: 15px !important;
+        border-radius: 10px !important;
+        margin-right: 10px !important;
+      }
+
+      .dropdown-item-title {
+        font-size: 13.5px !important;
+        white-space: normal !important;
+      }
+
+      .dropdown-item-desc {
+        font-size: 11px !important;
+        white-space: normal !important;
+      }
+
+      .dropdown-menu-eyebrow {
+        padding: 4px 6px 8px !important;
+        margin-bottom: 6px !important;
+      }
+
+      .dropdown-menu-footer-note {
+        padding: 8px 6px 2px !important;
+        margin-top: 4px !important;
+      }
+    }
+  </style>
 </head>
 
 <body class="sub_page">
@@ -40,7 +280,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class='navbar-brand' href='/'>
-            <img src="../images/logo.png" alt="Miracle Global School Logo">
+            <img src="/images/logo.png" alt="Miracle Global School Logo">
             <span>
               Miracle Global School
             </span>
@@ -56,8 +296,49 @@
                 <li class="nav-item">
                   <a class='nav-link' href='/'> Home </a>
                 </li>
-                <li class="nav-item active">
-                  <a class='nav-link' href='/about'> About <span class="sr-only">(current)</span></a>
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="#" id="schoolDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    School <i class="fa fa-angle-down dropdown-arrow"></i>
+                  </a>
+                  <div class="dropdown-menu school-dropdown-menu" aria-labelledby="schoolDropdown">
+                    <div class="dropdown-menu-eyebrow">
+                      <span><i class="fa fa-compass" style="color: #082465; margin-right: 4px;"></i> Explore
+                        Miracle</span>
+                      <span class="badge-eyebrow">Academics</span>
+                    </div>
+
+                    <a class="dropdown-item dropdown-card-item active" href="/about">
+                      <div class="dropdown-item-icon icon-school">
+                        <i class="fa fa-university"></i>
+                      </div>
+                      <div class="dropdown-item-content">
+                        <div class="dropdown-item-header-row">
+                          <span class="dropdown-item-title">About Miracle Global School</span>
+                          <span class="dropdown-active-pill">Active</span>
+                        </div>
+                        <span class="dropdown-item-desc">Our story, vision &amp; campus philosophy</span>
+                      </div>
+                      <i class="fa fa-angle-right dropdown-item-chevron"></i>
+                    </a>
+
+                    <div class="dropdown-divider-custom"></div>
+
+                    <a class="dropdown-item dropdown-card-item" href="/mandatory-disclosures">
+                      <div class="dropdown-item-icon icon-cbse">
+                        <i class="fa fa-certificate"></i>
+                      </div>
+                      <div class="dropdown-item-content">
+                        <div class="dropdown-item-header-row">
+                          <span class="dropdown-item-title">CBSE Mandatory Disclosure</span>
+                        </div>
+                        <span class="dropdown-item-desc">Official compliance, documents &amp; certificates</span>
+                      </div>
+                      <i class="fa fa-angle-right dropdown-item-chevron"></i>
+                    </a>
+
+
+                  </div>
                 </li>
 
                 <li class="nav-item ">
@@ -66,10 +347,6 @@
 
                 <li class="nav-item">
                   <a class='nav-link' href='/#whyus'> Why Us </a>
-                </li>
-
-                <li class="nav-item">
-                  <a class='nav-link' href='../certificates/Building-Safety-Certificate.pdf' target='_blank' rel='noopener noreferrer'> Safety Certificate </a>
                 </li>
 
                 <li class="nav-item">
@@ -92,7 +369,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="about_img-container">
-              <img src="../images/about.png" alt="">
+              <img src="images/about.png" alt="">
             </div>
           </div>
           <div class="col-md-6">
@@ -101,11 +378,16 @@
                 About our School
               </h3>
               <p align="justify">
-                Our school is dedicated to providing a quality education to all students. We believe that every child deserves the opportunity to learn and grow in a safe and supportive environment.
-                <br/><br/>
-                We are committed to creating a positive school culture that promotes academic excellence, character development, and social responsibility. Our dedicated teachers are experts in their fields and are committed to providing the best possible learning experience for our students.
-                <br/><br/>
-                We also value community involvement and encourage parents and guardians to be active participants in their child's education. We believe that a strong partnership between home and school is essential for student success.
+                Our school is dedicated to providing a quality education to all students. We believe that every child
+                deserves the opportunity to learn and grow in a safe and supportive environment.
+                <br /><br />
+                We are committed to creating a positive school culture that promotes academic excellence, character
+                development, and social responsibility. Our dedicated teachers are experts in their fields and are
+                committed to providing the best possible learning experience for our students.
+                <br /><br />
+                We also value community involvement and encourage parents and guardians to be active participants in
+                their child's education. We believe that a strong partnership between home and school is essential for
+                student success.
               </p>
               <div class="">
                 <a class='call_to-btn btn_white-border' href='/#contact'>
@@ -137,7 +419,8 @@
             About Us
           </h5>
           <p>
-            Our school is a place where students feel valued, respected, and supported as they strive to reach their full potential.
+            Our school is a place where students feel valued, respected, and supported as they strive to reach their
+            full potential.
           </p>
         </div>
         <div class="col-md-4 mb-4 mb-md-0">
@@ -149,7 +432,6 @@
             <li><a href="/about">About Us</a></li>
             <li><a href="/#admission">Admission</a></li>
             <li><a href="/#whyus">Why Us</a></li>
-            <li><a href="../certificates/Building-Safety-Certificate.pdf" target="_blank" rel="noopener noreferrer">Safety Certificate</a></li>
           </ul>
         </div>
         <div class="col-md-4">
@@ -166,10 +448,12 @@
             </a>
           </p>
           <div class="social_footer_box mt-3">
-            <a href="https://www.instagram.com/miracleschool?stkn=aHUzZ3dzcnlhZ3k4" target="_blank" rel="noopener noreferrer" class="social-icon-btn instagram" title="Follow us on Instagram">
+            <a href="https://www.instagram.com/miracleschool?stkn=aHUzZ3dzcnlhZ3k4" target="_blank"
+              rel="noopener noreferrer" class="social-icon-btn instagram" title="Follow us on Instagram">
               <i class="fa fa-instagram"></i>
             </a>
-            <a href="https://youtube.com/@miracleglobalschool?si=xJDWktuSfu7sUhpv" target="_blank" rel="noopener noreferrer" class="social-icon-btn youtube" title="Subscribe on YouTube">
+            <a href="https://youtube.com/@miracleglobalschool?si=xJDWktuSfu7sUhpv" target="_blank"
+              rel="noopener noreferrer" class="social-icon-btn youtube" title="Subscribe on YouTube">
               <i class="fa fa-youtube-play"></i>
             </a>
           </div>
@@ -186,8 +470,27 @@
   </section>
   <!-- footer section -->
 
-  <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="../js/bootstrap.js"></script>
+  <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.navbar-nav .dropdown-toggle').on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var $dropdown = $(this).closest('.dropdown');
+        var isShown = $dropdown.hasClass('show');
+        $('.navbar-nav .dropdown').removeClass('show').find('.dropdown-menu').removeClass('show');
+        if (!isShown) {
+          $dropdown.addClass('show').find('.dropdown-menu').addClass('show');
+        }
+      });
+      $(document).on('click', function (e) {
+        if (!$(e.target).closest('.dropdown').length) {
+          $('.navbar-nav .dropdown').removeClass('show').find('.dropdown-menu').removeClass('show');
+        }
+      });
+    });
+  </script>
 
 </body>
 
