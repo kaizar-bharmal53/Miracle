@@ -4,9 +4,10 @@
     }
 
     .navbar-brand img {
-        height: 38px;
-        width: 38px;
-        margin-right: 6px;
+        height: 52px;
+        width: auto;
+        margin-right: 0;
+        padding: 5px 10px;
     }
 
     .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
@@ -86,6 +87,11 @@
 }
 
 @media (max-width: 576px) {
+    .navbar-brand img {
+        height: 46px;
+        padding: 4px 8px;
+    }
+
     .hero-container {
         padding-bottom: 70px;
     }

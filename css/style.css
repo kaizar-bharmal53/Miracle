@@ -680,14 +680,15 @@ a:focus {
 }
 
 .navbar-brand img {
-  height: 48px;
-  width: 48px;
-  border-radius: 50%;
-  margin-right: 12px;
+  height: 60px;
+  width: auto;
+  max-height: 65px;
+  border-radius: 10px;
+  margin-right: 0;
   vertical-align: middle;
   background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
-  padding: 1px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+  padding: 6px 14px;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -707,9 +708,7 @@ a:focus {
 }
 
 .navbar-brand span {
-  font-size: 22px;
-  font-weight: 700;
-  color: #fefefe;
+  display: none;
 }
 
 .custom_nav-container {
